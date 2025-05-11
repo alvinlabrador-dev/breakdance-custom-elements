@@ -1,25 +1,25 @@
 <?php
 
 /**
- * Plugin Name: Breakdance Custom Elements
+ * Plugin Name: L+P BD Custom Elements
  * Plugin URI: https://breakdance.com/
- * Description: Boilerplate plugin to save your custom elements created with Element Studio.
- * Author: Breakdance
- * Author URI: https://breakdance.com/
+ * Description: Linesandpixels.team custom elements for BD
+ * Author: L+P
+ * Author URI: http://linesandpixels.team/
  * License: GPLv2
  * Text Domain: breakdance
  * Domain Path: /languages/
  * Version: 0.0.1
  */
 
-namespace BreakdanceCustomElements;
+namespace LNPBDCustomElements;
 
 use function Breakdance\Util\getDirectoryPathRelativeToPluginFolder;
 
 add_action('breakdance_loaded', function () {
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/elements',
-        'BreakdanceCustomElements',
+        'LNPBDCustomElements',
         'element',
         'Custom Elements',
         false
@@ -27,7 +27,7 @@ add_action('breakdance_loaded', function () {
 
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/macros',
-        'BreakdanceCustomElements',
+        'LNPBDCustomElements',
         'macro',
         'Custom Macros',
         false,
@@ -35,7 +35,7 @@ add_action('breakdance_loaded', function () {
 
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/presets',
-        'BreakdanceCustomElements',
+        'LNPBDCustomElements',
         'preset',
         'Custom Presets',
         false,
